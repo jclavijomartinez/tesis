@@ -1,0 +1,25 @@
+services:
+  snort:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: snort
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    networks:
+      lan_net:
+      default:
+    command: >
+      snort -Q --daq afpacket -c /etc/snort/snort.conf -i eth0:eth1 -A console
+    volumes:
+      - ./logs:/var/log/snort
+
+networks:
+  lan_net:
+    external: true
+    name: routing_lan_net   # usamos la misma que el router
+  default:
+    external: true
+    name: routing_default   # la red por defecto del router

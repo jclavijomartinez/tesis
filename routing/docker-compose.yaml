@@ -1,0 +1,32 @@
+services:
+  dhcp-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dhcp-server
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+    networks:
+      lan_net:
+        ipv4_address: 192.168.1.2   # IP del servidor DHCP
+
+  router-nat:
+    build:
+      context: .
+      dockerfile: router/Dockerfile
+    container_name: router-nat
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+    network_mode: host   # acceso directo a enp0s3 (WAN)
+    restart: unless-stopped
+
+networks:
+  lan_net:
+    driver: macvlan
+    driver_opts:
+      parent: enp0s8               # interfaz física hacia la LAN
+    ipam:
+      config:
+        - subnet: 192.168.1.0/24
