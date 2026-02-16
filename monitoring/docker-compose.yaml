@@ -18,7 +18,19 @@ services:
     networks:
       - monitoring
     restart: unless-stopped
-
+  loki:
+    image: grafana/loki:2.9.0
+    container_name: loki
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./loki/loki-config.yml:/etc/loki/local-config.yaml:ro
+      - loki-data:/loki
+    command: -config.file=/etc/loki/local-config.yaml
+    networks:
+      - monitoring
+    restart: unless-stopped
+    
   ping-exporter:
     build: ./ping-exporter
     container_name: ping-exporter
