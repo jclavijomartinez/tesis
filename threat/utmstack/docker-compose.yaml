@@ -3,3 +3,4 @@ services:
     container_name: ubuntu
     image: ubuntu:latest
     restart: on-failure
+    command: ["sleep","infinity"]
