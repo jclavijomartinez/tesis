@@ -1,1 +1,21 @@
-test
+services:
+  suricata:
+    # Usa imagen recomendada
+    image: jasonish/suricata:latest
+    container_name: suricata
+    restart: unless-stopped
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_NICE
+    volumes:
+      - ./suricata.yaml:/etc/suricata/suricata.yaml:ro
+      - ./rules:/var/lib/suricata/rules
+      - suricata-logs:/var/log/suricata
+      - suricata-run:/var/run/suricata
+    command: -i eth0 --set "vars.address-groups.HOME_NET=[192.168.1.0/24]"
+
+volumes:
+  suricata-logs:
+  suricata-run:
