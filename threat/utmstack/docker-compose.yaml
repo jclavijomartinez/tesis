@@ -1,1 +1,5 @@
-test
+services:
+  ubuntu:
+    container_name: ubuntu
+    image: ubuntu:latest
+    restart: on-failure
