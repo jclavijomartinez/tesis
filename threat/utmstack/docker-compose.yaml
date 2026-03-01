@@ -1,6 +1,13 @@
 services:
-  ubuntu:
-    container_name: ubuntu
-    image: ubuntu:latest
-    restart: on-failure
-    command: ["sleep","infinity"]
+  utmstack:
+    container_name: utmstack-install
+    image: ubuntu:24.04
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+    volumes:
+      - utmstack-data:/opt/utmstack
+    command: ["tail", "-f", "/dev/null"]
+
+volumes:
+  utmstack-data:
