@@ -1,1 +1,17 @@
-test
+services:
+  zeek:
+    container_name: zeek
+    image: zeek/zeek:latest
+    restart: unless-stopped
+
+    network_mode: host   # necesario para capturar tráfico real
+
+    volumes:
+      - ./logs:/usr/local/zeek/logs
+      - ./pcaps:/pcaps
+      - ./scripts:/scripts
+
+    working_dir: /usr/local/zeek
+
+    command: >
+      zeek -i eth0 local
