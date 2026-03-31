@@ -3,6 +3,25 @@ services:
     container_name: zeek
     image: zeek/zeek:latest
     restart: unless-stopped
+    network_mode: host
+
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+
+    volumes:
+      - ./logs:/usr/local/zeek/logs
+      - ./pcaps:/pcaps
+      - ./scripts:/scripts
+
+    working_dir: /usr/local/zeek
+
+    command: >
+      zeek -i enp0s3 -i enp0s8 localservices:
+  zeek:
+    container_name: zeek
+    image: zeek/zeek:latest
+    restart: unless-stopped
 
     network_mode: host  # required to access real interfaces
 
