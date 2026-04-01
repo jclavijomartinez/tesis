@@ -15,9 +15,17 @@ services:
     container_name: grafana
     ports:
       - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana-data:/var/lib/grafana
     networks:
       - monitoring
+    depends_on:
+      - prometheus
+      - loki
     restart: unless-stopped
+
   loki:
     image: grafana/loki:2.9.0
     container_name: loki
@@ -30,7 +38,20 @@ services:
     networks:
       - monitoring
     restart: unless-stopped
-    
+
+  promtail:
+    image: grafana/promtail:2.9.0
+    container_name: promtail
+    volumes:
+      - ../threat/zeek/logs:/var/log/zeek:ro   # ✅ points to threat folder
+      - ./promtail/promtail-config.yml:/etc/promtail/config.yml:ro
+    command: -config.file=/etc/promtail/config.yml
+    networks:
+      - monitoring
+    depends_on:
+      - loki
+    restart: unless-stopped
+
   ping-exporter:
     build: ./ping-exporter
     container_name: ping-exporter
@@ -43,6 +64,7 @@ services:
 networks:
   monitoring:
     driver: bridge
+
 volumes:
   grafana-data:
   loki-data:
