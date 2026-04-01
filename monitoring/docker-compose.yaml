@@ -17,6 +17,7 @@ services:
       - "3000:3000"
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_METRICS_ENABLED=true
     volumes:
       - grafana-data:/var/lib/grafana
     networks:
@@ -42,6 +43,8 @@ services:
   alloy:
     image: grafana/alloy:latest
     container_name: alloy
+    ports:
+      - "12345:12345"
     volumes:
       - ./alloy/config.alloy:/etc/alloy/config.alloy:ro
       - ../threat/zeek/logs:/var/log/zeek:ro   # reads Zeek logs from threat folder
