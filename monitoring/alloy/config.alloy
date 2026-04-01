@@ -1,0 +1,17 @@
+local.file_match "zeek_logs" {
+  path_targets = [{
+    __path__ = "/var/log/zeek/*.log",
+    job       = "zeek",
+  }]
+}
+
+loki.source.file "zeek" {
+  targets    = local.file_match.zeek_logs.targets
+  forward_to = [loki.write.default.receiver]
+}
+
+loki.write "default" {
+  endpoint {
+    url = "http://loki:3100/loki/api/v1/push"
+  }
+}
