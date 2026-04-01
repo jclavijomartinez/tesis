@@ -1,11 +1,19 @@
 global:
-  scrape_interval: 2s
+  scrape_interval: 5s
 
 scrape_configs:
   - job_name: "prometheus"
     static_configs:
       - targets: ["prometheus:9090"]
 
-  - job_name: "ping"
+  - job_name: "loki"
     static_configs:
-      - targets: ["ping-exporter:8000"]
+      - targets: ["loki:3100"]
+
+  - job_name: "alloy"
+    static_configs:
+      - targets: ["alloy:12345"]   # Alloy's default metrics port
+
+  - job_name: "grafana"
+    static_configs:
+      - targets: ["grafana:3000"]
