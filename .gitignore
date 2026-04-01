@@ -1,2 +1,3 @@
 threat/wazuh-docker/
 threat/suricata/rules/
+threat/zeek/pcaps/
