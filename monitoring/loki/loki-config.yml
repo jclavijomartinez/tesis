@@ -17,9 +17,12 @@ common:
 schema_config:
   configs:
     - from: 2024-01-01
-      store: boltdb-shipper
+      store: tsdb                  # ✅ changed from boltdb-shipper
       object_store: filesystem
       schema: v13
       index:
         prefix: index_
         period: 24h
+
+limits_config:
+  allow_structured_metadata: false  # ✅ added
