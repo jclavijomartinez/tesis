@@ -52,15 +52,6 @@ services:
       - loki
     restart: unless-stopped
 
-  ping-exporter:
-    build: ./ping-exporter
-    container_name: ping-exporter
-    ports:
-      - "8000:8000"
-    networks:
-      - monitoring
-    restart: unless-stopped
-
 networks:
   monitoring:
     driver: bridge
