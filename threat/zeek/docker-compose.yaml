@@ -2,7 +2,7 @@ services:
   zeek:
     container_name: zeek
     image: zeek/zeek:latest
-    restart: "no"          # don't restart, just run once and exit cleanly
+    restart: "no"
 
     network_mode: host
 
@@ -16,4 +16,4 @@ services:
 
     working_dir: /usr/local/zeek/logs
 
-    command: zeek -r /pcaps/test.pcap local
+    command: zeek -r /pcaps/2025-06-13-traffic-analysis-exercise.pcap local
