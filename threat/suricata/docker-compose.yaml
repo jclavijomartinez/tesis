@@ -9,13 +9,15 @@ services:
       - NET_ADMIN
       - NET_RAW
       - SYS_NICE
+    environment:  
+      - PUID=1000
+      - PGID=1000
     volumes:
       - ./suricata.yaml:/etc/suricata/suricata.yaml
       - ./rules:/var/lib/suricata/rules
-      - suricata-logs:/var/log/suricata
-      - suricata-run:/var/run/suricata
-      - /home/jcl/tesis/threat/suricata/pcaps:/pcaps  
-      - /home/jcl/tesis/threat/suricata/logs:/logs
+      - /home/jcl/tesis/threat/suricata/logs:/var/log/suricata
+      - suricata-run:/var/run/suricata  
+      - /home/jcl/tesis/threat/suricata/pcaps:/pcaps
     command: -r /pcaps/2025-06-13-traffic-analysis-ex.pcap -l /logs
 
 volumes:
