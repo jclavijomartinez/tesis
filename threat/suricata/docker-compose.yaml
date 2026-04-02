@@ -14,7 +14,9 @@ services:
       - ./rules:/var/lib/suricata/rules
       - suricata-logs:/var/log/suricata
       - suricata-run:/var/run/suricata
-    command: -i eth0 --set "vars.address-groups.HOME_NET=[192.168.1.0/24]"
+      - /home/jcl/tesis/threat/suricata/pcaps:/pcaps  
+      - /home/jcl/tesis/threat/suricata/logs:/logs
+    command: -r /pcaps/2025-06-13-traffic-analysis-ex.pcap -l /logs
 
 volumes:
   suricata-logs:
