@@ -1,3 +1,7 @@
+http {  
+  listen_addr = "0.0.0.0:12345"  
+}
+
 local.file_match "zeek_logs" {
   path_targets = [{
     __path__ = "/var/log/zeek/*.log",
@@ -13,20 +17,5 @@ loki.source.file "zeek" {
 loki.write "default" {
   endpoint {
     url = "http://loki:3100/loki/api/v1/push"
-  }
-}
-
-// ── Expose Alloy's own metrics to Prometheus ──────────────────────────────
-prometheus.exporter.self "alloy_self" {}
-
-prometheus.scrape "alloy_self" {
-  targets    = prometheus.exporter.self.alloy_self.targets
-  forward_to = [prometheus.remote_write.default.receiver]
-  scrape_interval = "15s"
-}
-
-prometheus.remote_write "default" {
-  endpoint {
-    url = "http://prometheus:9090/api/v1/write"
   }
 }
