@@ -54,14 +54,14 @@ outputs:
   # Fast alert log (one line per alert)
   - fast:
       enabled: yes
-      filename: fast.log
+      filename: /var/log/suricata/fast.log
       append: yes
 
   # Full JSON event log (main output)
   - eve-log:
       enabled: yes
       filetype: regular
-      filename: eve.json
+      filename: /var/log/suricata/eve.json
       types:
         - alert:
             payload: yes
