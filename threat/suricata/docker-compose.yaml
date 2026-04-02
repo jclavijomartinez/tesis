@@ -3,7 +3,7 @@ services:
     # Usa imagen recomendada
     image: jasonish/suricata:latest
     container_name: suricata
-    restart: unless-stopped
+    restart: no
     network_mode: host
     cap_add:
       - NET_ADMIN
