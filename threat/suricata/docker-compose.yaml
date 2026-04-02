@@ -18,7 +18,7 @@ services:
       - /home/jcl/tesis/threat/suricata/logs:/var/log/suricata
       - suricata-run:/var/run/suricata  
       - /home/jcl/tesis/threat/suricata/pcaps:/pcaps
-    command: -r /pcaps/2025-06-13-traffic-analysis-ex.pcap -l /logs
+    command: -r /pcaps/2025-06-13-traffic-analysis-ex.pcap
 
 volumes:
   suricata-run:
