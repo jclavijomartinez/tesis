@@ -48,7 +48,7 @@ services:
     volumes:
       - ./alloy/config.alloy:/etc/alloy/config.alloy:ro
       - ../threat/zeek/logs:/var/log/zeek:ro   # reads Zeek logs from threat folder
-    command: run /etc/alloy/config.alloy
+    command: run /etc/alloy/config.alloy --server.http.listen-addr=0.0.0.0:12345
     networks:
       - monitoring
     depends_on:
