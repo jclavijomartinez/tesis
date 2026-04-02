@@ -10,7 +10,7 @@ services:
       - NET_RAW
       - SYS_NICE
     volumes:
-      - ./suricata.yaml:/etc/suricata/suricata.yaml:ro
+      - ./suricata.yaml:/etc/suricata/suricata.yaml
       - ./rules:/var/lib/suricata/rules
       - suricata-logs:/var/log/suricata
       - suricata-run:/var/run/suricata
