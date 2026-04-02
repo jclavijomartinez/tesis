@@ -21,5 +21,4 @@ services:
     command: -r /pcaps/2025-06-13-traffic-analysis-ex.pcap -l /logs
 
 volumes:
-  suricata-logs:
   suricata-run:
