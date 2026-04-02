@@ -101,38 +101,11 @@ outputs:
       use-stream-depth: no
       honor-pass-rules: no
 
-  # HTTP request log
-  - http-log:
-      enabled: yes
-      filename: http.log
-      append: yes
-      extended: yes
-
-  # TLS log
-  - tls-log:
-      enabled: yes
-      filename: tls.log
-      append: yes
-      extended: yes
-
-  # DNS log
-  - dns-log:
-      enabled: yes
-      filename: dns.log
-      append: yes
-
-  # Stats log
-  - stats:
-      enabled: yes
-      filename: stats.log
-      totals: yes
-      threads: no
-
   # Drop log (useful even in IDS mode for visibility)
-  - drop:
-      enabled: yes
-      filename: drop.log
-      append: yes
+  #- drop:
+  #    enabled: yes
+  #    filename: drop.log
+  #    append: yes
 
 ##
 ## Logging (Suricata engine messages, not alerts)
