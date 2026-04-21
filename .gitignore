@@ -1,0 +1,30 @@
+﻿# Reemplazar .gitignore con version correcta
+@"
+# Quarto (carpetas generadas - NO subir)
+_site/
+.quarto/
+site_libs/
+
+# Archivos generados por Quarto
+*.html
+*.tex
+*.pdf
+
+# VS2022
+.vs/
+
+# Archivos temporales de LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Respaldo de Office
+~$*.xlsx
+"@ | Out-File -FilePath .gitignore -Encoding utf8

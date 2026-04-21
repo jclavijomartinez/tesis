@@ -1,0 +1,40 @@
+---
+title: "Protocolo de Pruebas de Seguridad y Conectividad"
+author: "Juan -sebastían Clavijo Martinez"
+date: "`r Sys.Date()`"
+format:
+  html:
+    toc: true
+    toc-title: "Tabla de Contenidos"
+    code-copy: true
+---
+
+# Resumen del Protocolo
+
+Este documento contiene los resultados de las pruebas de conectividad y
+detección de intrusiones realizadas en el ambiente de simulación.
+
+## Fase Simulación
+
+| Prueba | Descripción | Estado |
+|:-------|:------------|:-------|
+| [T1](pruebas/T1_conectividad.qmd) | Conectividad LAN - Gateway - Internet | ✅ Completada |
+| [T2](pruebas/T2_servicios_galp.qmd) | Servicios GALP (Grafana, Loki, Prometheus, Alloy) | ✅ Completada |
+| [T3](pruebas/T3_ids_ips.qmd) | IDS/IPS (Suricata, Zeek, UTMStack, Wazuh) | ✅ Completada |
+| [T4](pruebas/T4_arp_spoofing.qmd) | Detección ARP Spoofing | ✅ Completada |
+| [T5](pruebas/T5_dns_spoofing.qmd) | Detección DNS Spoofing | ✅ Completada |
+| T6 | Detección Mapeo de Red | ⏳ Pendiente |
+| T7 | Detección Enumeración SMB | ⏳ Pendiente |
+| T8 | Detección Fuerza Bruta | ⏳ Pendiente |
+| T9 | Detección Movimiento Lateral | ⏳ Pendiente |
+| T10 | Detección Escalación de Privilegios | ⏳ Pendiente |
+
+## Fase Emulación
+
+*Pruebas pendientes de documentar*
+
+## Observaciones Generales
+
+El ambiente de simulación construido, basado en **Kubernetes**, **Docker** y utilizando **Ubuntu Linux** como sistema operativo base, demostró ser estable y permitió la ejecución exitosa de todas las pruebas de conectividad y ataques simulados.
+
+La plataforma de monitoreo (Grafana, Loki, Prometheus, Alloy) y los sistemas IDS/IPS (Suricata, Zeek, UTMStack, Wazuh) se desplegaron correctamente y permanecieron operativos durante toda la fase de pruebas.

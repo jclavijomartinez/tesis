@@ -1,0 +1,41 @@
+---
+title: "T1 - Verificación de Conectividad Completa"
+---
+
+## Condiciones de la prueba
+
+- **# de prueba:** T1
+- **Condiciones:** Verificación de conectividad completa
+- **Camino activado:** Conexión de todos los nodos de la red a internet
+- **Secuencia de entradas:** En cada máquina de la LAN interna, hacer ping al: gateway (10.0.2.1), la interfaz northbound (192.168.0.10) y un dominio en internet (nokia.com)
+- **Salidas esperadas:** Respuesta desde los diferentes hosts
+
+## Salidas obtenidas
+
+### T1.1 - Ping al Gateway (10.0.2.1)
+
+| Máquina | Evidencia | Resultado |
+|:--------|:----------|:----------|
+| PC-Win11-1 (W1) | ![Ping gateway W1](../imagenes/T1-1_W1_ping_gateway.png) | ✅ Exitosa |
+| PC-Win11-2 (W2) | ![Ping gateway W2](../imagenes/T1-1_W2_ping_gateway.png) | ✅ Exitosa |
+| PC-Win11-3 (W3) | ![Ping gateway W3](../imagenes/T1-1_W3_ping_gateway.png) | ✅ Exitosa |
+
+### T1.2 - Ping a Interfaz Northbound (192.168.0.10)
+
+| Máquina | Evidencia | Resultado |
+|:--------|:----------|:----------|
+| PC-Win11-1 (W1) | ![Ping northbound W1](../imagenes/T1-2_W1_ping_northbound.png) | ✅ Exitosa |
+| PC-Win11-2 (W2) | ![Ping northbound W2](../imagenes/T1-2_W2_ping_northbound.png) | ✅ Exitosa |
+| PC-Win11-3 (W3) | ![Ping northbound W3](../imagenes/T1-2_W3_ping_northbound.png) | ✅ Exitosa |
+
+### T1.3 - Ping a dominio público (nokia.com)
+
+| Máquina | Evidencia | Resultado |
+|:--------|:----------|:----------|
+| PC-Win11-1 (W1) | ![Ping nokia W1](../imagenes/T1-3_W1_ping_nokia.png) | ✅ Exitosa |
+| PC-Win11-2 (W2) | ![Ping nokia W2](../imagenes/T1-3_W2_ping_nokia.png) | ✅ Exitosa |
+| PC-Win11-3 (W3) | ![Ping nokia W3](../imagenes/T1-3_W3_ping_nokia.png) | ✅ Exitosa |
+
+## Observación
+
+Se logró la conectividad completa desde todas las máquinas de la LAN interna hacia el gateway (10.0.2.1), la interfaz northbound (192.168.0.10) y el dominio externo nokia.com, con respuestas exitosas en todos los casos. El tiempo de respuesta fue menor a 1ms para destinos locales y variable para internet.

@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Protocolo de Pruebas - Tesis"
+  sidebar:
+    style: docked
+    contents:
+      - index.qmd
+      - section: "Fase Simulación"
+        contents: pruebas/fase-simulacion/*
+      - section: "Fase Emulación"
+        contents: pruebas/fase-emulacion/*
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-copy: true
+  pdf:
+    documentclass: article
+    geometry:
+      - margin=1in
+    keep-tex: true
