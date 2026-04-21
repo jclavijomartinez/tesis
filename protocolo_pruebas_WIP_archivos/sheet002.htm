@@ -1,0 +1,496 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../protocolo_pruebas_WIP.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(1);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../protocolo_pruebas_WIP.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#467886" vlink="#96607D" class=xl65>
+
+<table border=0 cellpadding=0 cellspacing=0 width=1399 style='border-collapse:
+ collapse;table-layout:fixed;width:1051pt'>
+ <col class=xl65 width=84 style='width:63pt'>
+ <col class=xl65 width=138 style='mso-width-source:userset;mso-width-alt:4817;
+ width:104pt'>
+ <col class=xl65 width=307 style='mso-width-source:userset;mso-width-alt:10705;
+ width:230pt'>
+ <col class=xl65 width=227 style='mso-width-source:userset;mso-width-alt:7936;
+ width:171pt'>
+ <col class=xl65 width=245 style='mso-width-source:userset;mso-width-alt:8564;
+ width:184pt'>
+ <col class=xl65 width=202 style='mso-width-source:userset;mso-width-alt:7051;
+ width:152pt'>
+ <col class=xl65 width=196 style='mso-width-source:userset;mso-width-alt:6842;
+ width:147pt'>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt'></td>
+  <td class=xl65 width=307 style='width:230pt'></td>
+  <td class=xl65 width=227 style='width:171pt'></td>
+  <td class=xl65 width=245 style='width:184pt'></td>
+  <td class=xl65 width=202 style='width:152pt'></td>
+  <td class=xl65 width=196 style='width:147pt'></td>
+ </tr>
+ <tr height=24 style='height:18.0pt'>
+  <td height=24 class=xl65 width=84 style='height:18.0pt;width:63pt'></td>
+  <td class=xl67 width=138 style='width:104pt;font-size:14.0pt;color:black;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:.5pt solid black;border-left:none'># de prueba</td>
+  <td class=xl67 width=307 style='width:230pt;font-size:14.0pt;color:black;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:.5pt solid black;border-left:none'>Condiciones de la
+  prueba</td>
+  <td class=xl67 width=227 style='width:171pt;font-size:14.0pt;color:black;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:.5pt solid black;border-left:none'>Camino activado</td>
+  <td class=xl67 width=245 style='width:184pt;font-size:14.0pt;color:black;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:.5pt solid black;border-left:none'>Secuencia de entradas</td>
+  <td class=xl67 width=202 style='width:152pt;font-size:14.0pt;color:black;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:.5pt solid black;border-left:none'>Salidas esperadas</td>
+  <td class=xl67 width=196 style='width:147pt;font-size:14.0pt;color:black;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:.5pt solid black;border-left:none'>Salidas obtenidas</td>
+ </tr>
+ <tr height=83 style='height:62.0pt'>
+  <td height=83 class=xl65 width=84 style='height:62.0pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'>T1</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'>Prueba
+  de conectividad completa</td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'>conexión
+  de todos los nodos</td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'>En
+  cada máquina de la LAN interna, hacer ping a 10.0.0.1, luego a 192.168.0.10,
+  luego a 1.1.1.1</td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'>T2</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'>T3</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'>T4</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'>T5</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'>T6</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'>T7</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'>T8</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'>T9</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'>T10</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'>T11</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'>T12</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'>T13</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'>T14</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'>T15</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'>T16</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'>T17</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 class=xl65 width=84 style='height:15.5pt;width:63pt'></td>
+  <td class=xl65 width=138 style='width:104pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'>T18</td>
+  <td class=xl65 width=307 style='width:230pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=227 style='width:171pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=245 style='width:184pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=202 style='width:152pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+  <td class=xl65 width=196 style='width:147pt;font-size:12.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=84 style='width:63pt'></td>
+  <td width=138 style='width:104pt'></td>
+  <td width=307 style='width:230pt'></td>
+  <td width=227 style='width:171pt'></td>
+  <td width=245 style='width:184pt'></td>
+  <td width=202 style='width:152pt'></td>
+  <td width=196 style='width:147pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
