@@ -1,0 +1,8 @@
+threat/wazuh-docker/
+threat/suricata/rules/
+threat/suricata/logs/
+threat/suricata/pcaps/
+threat/zeek/pcaps/
+threat/zeek/logs/
+backups/
+detectionstk/suricata/logs/eve.json
