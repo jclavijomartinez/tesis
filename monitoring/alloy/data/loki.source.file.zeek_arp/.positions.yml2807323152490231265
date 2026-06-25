@@ -1,0 +1,4 @@
+positions:
+  ? path: /var/log/zeek/arp_detec.log
+    labels: '{host="detection_server", job="zeek_alerts"}'
+  : "16"

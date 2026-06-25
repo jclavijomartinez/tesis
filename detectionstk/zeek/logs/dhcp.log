@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dhcp
+#open	2026-04-14-22-07-48
+#fields	ts	uids	client_addr	server_addr	mac	host_name	client_fqdn	domain	requested_addr	assigned_addr	lease_time	client_message	server_message	msg_types	duration
+#types	time	set[string]	addr	addr	string	string	string	string	addr	addr	interval	string	string	vector[string]	interval
+1749828835.686551	C7lWsGEjDKaWr3Pjf,CpMY872LdeMBwalaN4	10.6.13.133	10.6.13.3	24:77:03:ac:97:df	DESKTOP-5AVE44C	DESKTOP-5AVE44C.massfriction.com	-	10.6.13.133	10.6.13.133	691200.000000	-	-	DISCOVER,OFFER,REQUEST,ACK	0.003498
+#close	2026-04-14-22-07-49

@@ -1,0 +1,16 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	quic
+#open	2026-04-14-22-07-48
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	version	client_initial_dcid	client_scid	server_scid	server_name	client_protocol	history
+#types	time	string	addr	port	addr	port	string	string	string	string	string	string	string
+1749828855.217787	CpJi7H364zAOzZtiY7	10.6.13.133	63805	23.198.7.186	443	1	abd4cbe774fb4347	(empty)	0c5e02eeb7c04126	www.bing.com	h3	IISiishhHhHOooOoOOooO
+1749828858.105769	C2jXLu1P7bZSd2cQ08	10.6.13.133	61141	23.198.7.186	443	1	38e0d8366482511d	(empty)	1d925079b7c04126	www.bing.com	h3	IISiishIHOOoooOoOo
+1749828899.482911	CmtWYv3XfMbAv5XlF1	10.6.13.133	52079	23.198.7.186	443	1	d5711e48d98a28f9	(empty)	0a6cd655b4c04126	www.bing.com	h3	IISiishIHOOOOoooooOoOoOoO
+1749828975.334418	CNwIHQfSyrXVJDgqb	10.6.13.133	59942	23.212.185.76	443	1	1a7077f280f098b7	(empty)	21e0b4a35500b930	assets.msn.com	h3	IISiishhIHhHOOoooOo
+1749828975.668764	CObccJ23Ou9Q7wZpx6	10.6.13.133	64463	23.198.7.186	443	1	d975ec3c5331a214	(empty)	0ea8ee13b7c04126	th.bing.com	h3	IISiishhHhHHOOohooOoOoOoOo
+1749828976.761607	CqORVJ37HllfdXWLRd	10.6.13.133	58298	23.198.7.182	443	1	ae6415ee0f0aee10	(empty)	15e45fbc96c04126	www.bing.com	h3	IISiishIHhhHHOOhoooOoOoO
+1749828976.781678	CBhsIJ2zfRZh4aT0a	10.6.13.133	53770	23.212.185.76	443	1	ca1666fcc3dcabe6	(empty)	2782e1815600b930	assets.msn.com	h3	IISiishIHOOooOooOoOo
+#close	2026-04-14-22-07-49

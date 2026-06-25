@@ -1,0 +1,13 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	weird
+#open	2026-04-14-22-07-48
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	name	addl	notice	peer	source
+#types	time	string	addr	port	addr	port	string	string	bool	string	string
+1749828850.145465	C2qyPI7bVrqq9A10b	10.6.13.133	52442	10.6.13.3	59774	netlogon_dce_rpc_auth_type	68	F	zeek	DCE_RPC
+1749828866.334362	CrWkaSRdVEHxfFP7h	10.6.13.133	52460	23.198.7.180	443	window_recision	-	F	zeek	-
+1749828974.368506	CTUA9W3RvppWJbhB97	10.6.13.133	52520	23.212.185.87	443	window_recision	-	F	zeek	-
+1749828976.002170	C4bue3qEWYhKkCiR	10.6.13.133	52526	23.198.7.168	443	window_recision	-	F	zeek	-
+#close	2026-04-14-22-07-49

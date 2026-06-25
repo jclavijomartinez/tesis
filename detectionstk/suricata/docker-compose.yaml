@@ -1,0 +1,24 @@
+services:
+  suricata:
+    # Usa imagen recomendada
+    image: jasonish/suricata:latest
+    container_name: suricata
+    restart: no
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_NICE
+    environment:  
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ./suricata.yaml:/etc/suricata/suricata.yaml
+      - ./rules:/var/lib/suricata/rules
+      - suricata-run:/var/run/suricata
+      - ./pcaps:/pcaps:ro
+      - ./logs:/var/log/suricata 
+    command: -r /pcaps/dns_spoof_test.pcap
+
+volumes:
+  suricata-run:

@@ -1,0 +1,15 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	smb_mapping
+#open	2026-04-14-22-07-48
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	path	service	native_file_system	share_type
+#types	time	string	addr	port	addr	port	string	string	string	string
+1749828850.135537	C7HOMH3DZS6ERl5PH8	10.6.13.133	52436	10.6.13.3	445	\\\\WIN-DQL4WFWJXQ4.massfriction.com\\IPC$	-	-	PIPE
+1749828850.415974	CgYJkN1yWQKD45nYVc	10.6.13.133	52445	10.6.13.3	445	\\\\win-dql4wfwjxq4\\Shared	-	-	DISK
+1749828864.734197	CmzxfznVDn0rNSKl2	10.6.13.133	52459	10.6.13.3	445	\\\\WIN-DQL4WFWJXQ4.massfriction.com\\IPC$	-	-	PIPE
+1749829042.492366	CgYJkN1yWQKD45nYVc	10.6.13.133	52445	10.6.13.3	445	\\\\win-dql4wfwjxq4\\IPC$	-	-	PIPE
+1749829764.763108	CAn1D12kPkNyW8Vpsi	10.6.13.133	52583	10.6.13.3	445	\\\\WIN-DQL4WFWJXQ4.massfriction.com\\IPC$	-	-	PIPE
+1749830664.795702	CFyq6t3UnYyYZPf2Bk	10.6.13.133	52627	10.6.13.3	445	\\\\WIN-DQL4WFWJXQ4.massfriction.com\\IPC$	-	-	PIPE
+#close	2026-04-14-22-07-49

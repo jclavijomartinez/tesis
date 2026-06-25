@@ -4,6 +4,7 @@ services:
     container_name: prometheus
     ports:
       - "9095:9095"
+      - "9090:9090"
     volumes:
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
     networks:
@@ -47,8 +48,13 @@ services:
       - "12345:12345"
     volumes:
       - ./alloy/config.alloy:/etc/alloy/config.alloy:ro
-      - ../threat/zeek/logs:/var/log/zeek:ro   # reads Zeek logs from threat folder
-    command: run /etc/alloy/config.alloy --server.http.listen-addr=0.0.0.0:12345
+      - /home/jcl/tesis/detectionstk/suricata/logs:/var/log/suricata:ro
+      - /var/log/security:/var/log/security:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - single-node_wazuh_logs:/wazuh-logs:ro
+      - ./alloy/data:/var/lib/alloy/data
+    command: run --server.http.listen-addr=0.0.0.0:12345 --storage.path=/var/lib/alloy/data /etc/alloy/config.alloy
     networks:
       - monitoring
     depends_on:
@@ -62,3 +68,5 @@ networks:
 volumes:
   grafana-data:
   loki-data:
+  single-node_wazuh_logs:
+    external: true

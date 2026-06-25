@@ -1,0 +1,92 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 1223254864822272,
+  "links": [],
+  "panels": [
+    {
+      "datasource": {
+        "uid": "Loki"
+      },
+      "id": 1,
+      "targets": [
+        {
+          "datasource": {
+            "uid": "Loki"
+          },
+          "expr": "{job=\"suricata\"}",
+          "refId": "A"
+        }
+      ],
+      "title": "Alertas de Suricata",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "uid": "Loki"
+      },
+      "id": 2,
+      "targets": [
+        {
+          "datasource": {
+            "uid": "Loki"
+          },
+          "expr": "{job=\"wazuh\"}",
+          "refId": "A"
+        }
+      ],
+      "title": "Alertas de Wazuh",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "uid": "Loki"
+      },
+      "id": 3,
+      "targets": [
+        {
+          "datasource": {
+            "uid": "Loki"
+          },
+          "expr": "{severity=\"critical\"}",
+          "refId": "A"
+        }
+      ],
+      "title": "Eventos Críticos",
+      "type": "logs"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 42,
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Monitoreo de Seguridad - Prueba",
+  "uid": "adjlgfq",
+  "version": 1,
+  "weekStart": ""
+}

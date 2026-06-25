@@ -1,0 +1,83 @@
+#!/usr/bin/env python3
+"""Lee alertas de Suricata (eve.json) y las envía a Loki y a Wazuh"""
+import json
+import requests
+import time
+import os
+
+LOKI_URL = "http://localhost:3100/loki/api/v1/push"
+EVE_FILE = "/home/jcl/tesis/detectionstk/suricata/logs/eve.json"
+WAZUH_FILE = "/var/log/suricata_alerts.log"
+
+def send_to_loki(signature, src_ip, dest_ip, category, severity):
+    payload = {
+        "streams": [{
+            "stream": {
+                "job": "suricata_alerts",
+                "source": "ids",
+                "severity": str(severity)
+            },
+            "values": [[
+                str(int(time.time() * 1e9)),
+                json.dumps({
+                    "signature": signature,
+                    "src_ip": src_ip,
+                    "dest_ip": dest_ip,
+                    "category": category,
+                    "severity": severity,
+                    "event_type": "alert"
+                })
+            ]]
+        }]
+    }
+    try:
+        requests.post(LOKI_URL, json=payload, timeout=2)
+    except:
+        pass
+
+def write_to_wazuh(signature, src_ip, dest_ip, category):
+    timestamp = time.strftime("%b %d %H:%M:%S")
+    line = f"{timestamp} ds suricata: Alert: {signature} | Src: {src_ip} | Dst: {dest_ip} | Cat: {category}\n"
+    try:
+        with open(WAZUH_FILE, 'a') as f:
+            f.write(line)
+    except:
+        pass
+
+def main():
+    last_position = 0
+    print("[+] Iniciando monitor de Suricata eve.json")
+    print(f"[+] Loki: {LOKI_URL}")
+    print(f"[+] Wazuh: {WAZUH_FILE}")
+    
+    while True:
+        try:
+            with open(EVE_FILE, 'r') as f:
+                f.seek(last_position)
+                for line in f:
+                    try:
+                        event = json.loads(line)
+                        if event.get('event_type') == 'alert':
+                            alert = event.get('alert', {})
+                            signature = alert.get('signature', 'unknown')
+                            category = alert.get('category', 'unknown')
+                            severity = alert.get('severity', 3)
+                            src_ip = event.get('src_ip', 'unknown')
+                            dest_ip = event.get('dest_ip', 'unknown')
+                            
+                            # Enviar a Loki
+                            send_to_loki(signature, src_ip, dest_ip, category, severity)
+                            
+                            # Escribir para Wazuh
+                            write_to_wazuh(signature, src_ip, dest_ip, category)
+                    except json.JSONDecodeError:
+                        pass
+                last_position = f.tell()
+        except FileNotFoundError:
+            print(f"[!] Archivo no encontrado: {EVE_FILE}")
+        except Exception as e:
+            print(f"[!] Error: {e}")
+        time.sleep(5)
+
+if __name__ == '__main__':
+    main()

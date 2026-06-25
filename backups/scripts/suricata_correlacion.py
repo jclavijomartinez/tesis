@@ -1,0 +1,300 @@
+#!/usr/bin/env python3
+"""
+SISTEMA DE CORRELACION DE EVENTOS SURICATA - R1 a R6
+Version: 2.0
+Fecha: 2026-06-22
+Funcionamiento:
+- Lee eve.json de Suricata
+- Filtra ruido (invalid checksum)
+- Envia R1 al indexer por cada alerta relevante
+- Correlacion local: R2 (10 alertas/10s), R4 (5 alertas/10s), R5 (3 alertas/30s)
+- Simula R3 (SSH brute force) y R6 (correlacion multi-fase) al inicio
+- Envia a Loki para dashboards en Grafana
+"""
+import json
+import requests
+import time
+import os
+import threading
+import logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler("/tmp/suricata_monitor.log"),
+        logging.StreamHandler()
+    ]
+)
+from datetime import datetime, timezone
+from collections import deque
+# ========== CONFIGURACION ==========
+EVE_FILE = "/home/jcl/tesis/detectionstk/suricata/logs/eve.json"
+INDEXER_URL = "https://192.168.0.10:9200/wazuh-alerts-4.x/_doc"
+INDEXER_AUTH = ("admin", "SecretPassword")
+LOKI_URL = "http://localhost:3100/loki/api/v1/push"
+POSITION_FILE = "/tmp/suricata_eve_position.txt"
+# Ventanas de correlacion (segundos)
+VENTANA_R2 = 10   # 10 alertas en 10s
+VENTANA_R4 = 10   # 5 alertas en 10s
+VENTANA_R5 = 30   # 3 alertas en 30s
+# Firmas a ignorar (ruido en VirtualBox)
+RUIDO = ["invalid checksum", "SURICATA TCPv4", "SURICATA UDPv4"]
+# ========== GLOBALS ==========
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+alertas_r1 = deque()
+lock = threading.Lock()
+# ========== FUNCIONES ==========
+def es_relevante(signature):
+    """Filtra ruido de VirtualBox"""
+    for r in RUIDO:
+        if r.lower() in signature.lower():
+            return False
+    return True
+def geoip(ip):
+    """Obtiene latitud y longitud de una IP externa usando ip-api.com"""
+    # Solo geolocalizar IPs públicas (no locales)
+    if ip.startswith(("192.168.", "10.", "172.16.", "172.17.", "172.18.", "172.19.", "172.20.", "127.", "0.")):
+        return 0, 0
+    try:
+        r = requests.get(f"http://ip-api.com/json/{ip}?fields=lat,lon,status", timeout=2)
+        if r.status_code == 200 and r.json().get("status") == "success":
+            data = r.json()
+            return data["lat"], data["lon"]
+    except:
+        pass
+    return 0, 0
+def enviar_a_indexer(rule_id, level, description, signature="", src_ip="", dest_ip="", category=""):
+    """Envia alerta al indexer de Wazuh"""
+    doc = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "rule": {
+            "id": str(rule_id), "level": level,
+            "description": description,
+            "groups": ["suricata", "ransomware_simulation"],
+            "firedtimes": 1
+        },
+        "agent": {"id": "001", "name": "ds", "ip": "192.168.0.100"},
+        "manager": {"name": "wazuh-manager"},
+        "data": {
+            "src_ip": src_ip, "dest_ip": dest_ip,
+            "alert": {"signature": signature, "category": category, "severity": level},
+            "event_type": "alert"
+        },
+        "tags": ["suricata", "correlacion"],
+        "location": "/var/log/suricata/eve.json"
+    }
+    try:
+        r = requests.post(INDEXER_URL, auth=INDEXER_AUTH,
+                         headers={"Content-Type": "application/json"},
+                         data=json.dumps(doc), verify=False, timeout=5)
+        if r.status_code == 201:
+            logging.info(f"  -> {description[:60]}")
+            return True
+    except Exception as e:
+        logging.error(f"  X Error: {e}")
+    return False
+def enviar_a_loki(signature, src_ip, dest_ip, category, severity):
+    """Envia alerta a Loki para Grafana"""
+    lat, lon = geoip(src_ip)
+    payload = {
+        "streams": [{
+            "stream": {
+                "job": "suricata_alerts", 
+                "signature": signature[:50], 
+                "severity": str(severity),
+                "lat": str(lat),
+                "lon": str(lon)
+            },
+            "values": [[str(int(time.time() * 1e9)), json.dumps({
+                "signature": signature, "src_ip": src_ip, "dest_ip": dest_ip,
+                "category": category, "severity": severity, "event_type": "alert"
+            })]]
+        }]
+    }
+    try:
+        r = requests.post(LOKI_URL, json=payload, timeout=5)
+        if r.status_code == 204:
+            logging.info(f"[LOKI] Alerta enviada: {signature[:60]}")
+        else:
+            logging.error(f"[LOKI] Error HTTP {r.status_code}: {r.text[:200]}")
+    except Exception as e:
+        logging.error(f"[LOKI] Error de conexion: {e}")
+AUTH_LOG = "/var/log/auth.log"
+AUTH_POSITION = "/tmp/suricata_auth_position.txt"
+ssh_alertas = deque()
+ULTIMA_R6 = 0
+def leer_auth_log():
+    """Lee auth.log del sistema y genera eventos R3 por SSH real"""
+    global ULTIMA_R6
+    last_pos = 0
+    try:
+        with open(AUTH_POSITION, 'r') as f:
+            last_pos = int(f.read().strip())
+    except:
+        pass
+
+    try:
+        with open(AUTH_LOG, 'r') as f:
+            f.seek(last_pos)
+            nuevas = 0
+            for line in f:
+                if "Failed password" in line or "Invalid user" in line:
+                    nuevas += 1
+                    ahora = time.time()
+
+                    srcip = "unknown"
+                    srcuser = "unknown"
+
+                    if "from" in line:
+                        try:
+                            idx_from = line.index("from") + 5
+                            partes_ip = line[idx_from:].strip().split()
+                            srcip = partes_ip[0] if partes_ip else "unknown"
+                        except:
+                            pass
+
+                    if "Invalid user" in line:
+                        try:
+                            idx_user = line.index("Invalid user") + 13
+                            srcuser = line[idx_user:].strip().split()[0]
+                        except:
+                            pass
+                    elif "for" in line:
+                        try:
+                            idx_for = line.index("for") + 4
+                            srcuser = line[idx_for:].strip().split()[0]
+                        except:
+                            pass
+
+                    logging.info(f"  [SSH] Intento fallido desde {srcip} usuario {srcuser}")
+
+                    enviar_a_indexer(100003, 10, f"R3 - SSH: intento fallido desde {srcip}",
+                                    "SSH Brute Force", srcip, "", "Authentication")
+                    enviar_a_loki(f"R3 - SSH: intento fallido desde {srcip}", srcip, "", "SSH Brute Force", 10)
+
+                    ssh_alertas.append(ahora)
+
+                    while ssh_alertas and ahora - ssh_alertas[0] > 120:
+                        ssh_alertas.popleft()
+
+                    if len(ssh_alertas) >= 10 and ahora - ULTIMA_R6 > 60:
+                        enviar_a_indexer(100006, 15,
+                            "R6 - ALERTA CRITICA: Multiples fases de ataque detectadas (SSH + Suricata)",
+                            "Correlacion multi-fase", srcip, "", "Correlation")
+                        ULTIMA_R6 = ahora
+                        logging.info("  -> R6 - ALERTA CRITICA generada por correlacion real")
+                    enviar_a_loki("R6 - ALERTA CRITICA: Multiples fases de ataque", srcip, "", "Correlation", 15)
+
+            last_pos = f.tell()
+            try:
+                with open(AUTH_POSITION, 'w') as f:
+                    f.write(str(last_pos))
+            except:
+                pass
+
+            if nuevas > 0:
+                logging.info(f"  [SSH] {nuevas} intentos procesados")
+
+    except FileNotFoundError:
+        pass
+    except Exception as e:
+        logging.info(f"  [SSH] Error: {e}")
+def leer_auth_log_loop():
+    """Hilo que lee auth.log cada 5 segundos"""
+    while True:
+        leer_auth_log()
+        time.sleep(5)
+def verificar_correlacion():
+    """Hilo que verifica correlacion cada 2 segundos"""
+    while True:
+        time.sleep(2)
+        ahora = time.time()
+        with lock:
+            while alertas_r1 and ahora - alertas_r1[0] > VENTANA_R5:
+                alertas_r1.popleft()
+
+            r2 = sum(1 for t in alertas_r1 if ahora - t <= VENTANA_R2)
+            r4 = sum(1 for t in alertas_r1 if ahora - t <= VENTANA_R4)
+            r5 = len(alertas_r1)
+
+            if r2 >= 10:
+                enviar_a_indexer(100002, 10, f"R2 - Multiples alertas ({r2} en {VENTANA_R2}s)")
+            if r4 >= 5:
+                enviar_a_indexer(100004, 9, f"R4 - Alta frecuencia ({r4} en {VENTANA_R4}s)")
+            if r5 >= 3:
+                enviar_a_indexer(100005, 12, f"R5 - Actividad persistente ({r5} en {VENTANA_R5}s)")
+# ========== MAIN ==========
+def main():
+    last_position = 0
+    try:
+        with open(POSITION_FILE, 'r') as f:
+            last_position = int(f.read().strip())
+    except:
+        pass
+
+    print("=" * 60)
+    print("  SURICATA CORRELACION ENGINE v2.0")
+    print("  Reglas: R1-R6 activas")
+    print("=" * 60)
+    logging.info(f"  Origen: {EVE_FILE}")
+    logging.info(f"  Indexer: {INDEXER_URL}")
+    logging.info(f"  Loki: {LOKI_URL}")
+    logging.info(f"  Posicion: {last_position}")
+    print("=" * 60)
+
+    # Enviar R3 y R6
+    hilo_auth = threading.Thread(target=leer_auth_log_loop, daemon=True)
+    hilo_auth.start()
+
+    # Iniciar hilo de correlacion
+    hilo = threading.Thread(target=verificar_correlacion, daemon=True)
+    hilo.start()
+
+    # Bucle principal: leer eve.json
+    while True:
+        try:
+            with open(EVE_FILE, 'r') as f:
+                f.seek(last_position)
+                for line in f:
+                    try:
+                        event = json.loads(line)
+                        if event.get('event_type') == 'alert':
+                            alert = event.get('alert', {})
+                            signature = alert.get('signature', 'unknown')
+                            category = alert.get('category', 'unknown')
+                            severity = alert.get('severity', 3)
+                            src_ip = event.get('src_ip', 'unknown')
+                            dest_ip = event.get('dest_ip', 'unknown')
+
+                            if not es_relevante(signature):
+                                continue
+
+                            ahora = time.time()
+                            print(f"Alerta: {signature[:50]}...")
+
+                            enviar_a_loki(signature, src_ip, dest_ip, category, severity)
+                            enviar_a_indexer(100001, 8, f"R1 - {signature[:60]}", signature, src_ip, dest_ip, category)
+
+                            with lock:
+                                alertas_r1.append(ahora)
+
+                            time.sleep(0.05)
+
+                    except json.JSONDecodeError:
+                        pass
+
+                last_position = f.tell()
+                try:
+                    with open(POSITION_FILE, 'w') as f:
+                        f.write(str(last_position))
+                except:
+                    pass
+
+        except FileNotFoundError:
+            print(f"Archivo no encontrado: {EVE_FILE}")
+        except Exception as e:
+            print(f"Error: {e}")
+        time.sleep(5)
+if __name__ == '__main__':
+    main()

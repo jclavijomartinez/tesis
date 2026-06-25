@@ -1,0 +1,174 @@
+04/24/2026-01:34:26.482187  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:59574 -> 192.168.0.1:53
+04/24/2026-01:34:26.300129  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:49969 -> 192.168.0.1:53
+04/24/2026-01:34:28.308706  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:49969 -> 192.168.0.1:53
+04/24/2026-01:34:31.110431  [**] [1:2022973:1] ET INFO Possible Kali Linux hostname in DHCP Request Packet [**] [Classification: Potential Corporate Privacy Violation] [Priority: 1] {UDP} 10.0.2.5:68 -> 10.0.2.3:67
+04/24/2026-01:34:30.064842  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:57417 -> 192.168.0.1:53
+04/24/2026-01:34:30.065695  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:57417 -> 192.168.0.1:53
+04/24/2026-01:34:30.047651  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:61086 -> 192.168.0.1:53
+04/24/2026-01:34:30.071096  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:57417
+04/24/2026-01:34:30.049241  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:61086 -> 192.168.0.1:53
+04/24/2026-01:34:30.071604  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:57417
+04/24/2026-01:34:30.053820  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:61086
+04/24/2026-01:34:32.310177  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:49969 -> 192.168.0.1:53
+04/24/2026-01:34:30.054004  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:61086
+04/24/2026-01:34:32.311180  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:49969 -> 192.168.0.1:53
+04/24/2026-01:34:32.315475  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:49969
+04/24/2026-01:34:32.315741  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:49969
+04/24/2026-01:34:39.660441  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:57294 -> 192.168.0.1:53
+04/24/2026-01:34:39.292432  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:52061 -> 192.168.0.1:53
+04/24/2026-01:34:39.293078  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:52061 -> 192.168.0.1:53
+04/24/2026-01:34:30.079365  [**] [1:1000002:1] THESIS: HTTP traffic detected [**] [Classification: Misc activity] [Priority: 3] {TCP} 200.69.125.137:80 -> 10.0.2.15:55766
+04/24/2026-01:34:39.306404  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:52061
+04/24/2026-01:34:30.079675  [**] [1:1000002:1] THESIS: HTTP traffic detected [**] [Classification: Misc activity] [Priority: 3] {TCP} 200.69.125.137:80 -> 10.0.2.15:55766
+04/24/2026-01:34:39.307272  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:52061
+04/24/2026-01:34:30.079792  [**] [1:2031071:5] ET INFO Microsoft Connection Test [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.0.2.15:55766 -> 200.69.125.137:80
+04/24/2026-01:34:39.660933  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:57294 -> 192.168.0.1:53
+04/24/2026-01:34:39.292229  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:52584 -> 192.168.0.1:53
+04/24/2026-01:34:39.292989  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:52584 -> 192.168.0.1:53
+04/24/2026-01:34:30.080252  [**] [1:1000002:1] THESIS: HTTP traffic detected [**] [Classification: Misc activity] [Priority: 3] {TCP} 200.69.125.137:80 -> 10.0.2.15:55766
+04/24/2026-01:34:39.697647  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:63123 -> 192.168.0.1:53
+04/24/2026-01:34:30.080738  [**] [1:1000002:1] THESIS: HTTP traffic detected [**] [Classification: Misc activity] [Priority: 3] {TCP} 200.69.125.137:80 -> 10.0.2.15:55766
+04/24/2026-01:34:39.306079  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:52584
+04/24/2026-01:34:39.698139  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:63123 -> 192.168.0.1:53
+04/24/2026-01:34:30.080738  [**] [1:1000002:1] THESIS: HTTP traffic detected [**] [Classification: Misc activity] [Priority: 3] {TCP} 200.69.125.137:80 -> 10.0.2.15:55766
+04/24/2026-01:34:39.669903  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:57294
+04/24/2026-01:34:39.307034  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:52584
+04/24/2026-01:34:39.710541  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:63123
+04/24/2026-01:34:39.671071  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:57294
+04/24/2026-01:34:39.710960  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:63123
+04/24/2026-01:34:39.698202  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:56731 -> 192.168.0.1:53
+04/24/2026-01:34:39.317517  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:52062 -> 192.168.0.1:53
+04/24/2026-01:34:30.081638  [**] [1:1000002:1] THESIS: HTTP traffic detected [**] [Classification: Misc activity] [Priority: 3] {TCP} 200.69.125.137:80 -> 10.0.2.15:55766
+04/24/2026-01:34:39.317998  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:52062 -> 192.168.0.1:53
+04/24/2026-01:34:39.318381  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:51775 -> 192.168.0.1:53
+04/24/2026-01:34:30.494786  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:59574 -> 192.168.0.1:53
+04/24/2026-01:34:30.496446  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:59574 -> 192.168.0.1:53
+04/24/2026-01:34:39.319012  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:51775 -> 192.168.0.1:53
+04/24/2026-01:34:39.699401  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:56731 -> 192.168.0.1:53
+04/24/2026-01:34:30.497896  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:59574
+04/24/2026-01:34:30.498880  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:59574
+04/24/2026-01:34:39.332446  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:52062
+04/24/2026-01:34:39.332902  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:52062
+04/24/2026-01:34:39.333259  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:51775
+04/24/2026-01:34:39.333883  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:51775
+04/24/2026-01:34:39.695317  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:52855 -> 192.168.0.1:53
+04/24/2026-01:34:39.695618  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:52855 -> 192.168.0.1:53
+04/24/2026-01:34:39.698397  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:50516 -> 192.168.0.1:53
+04/24/2026-01:34:39.699500  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:50516 -> 192.168.0.1:53
+04/24/2026-01:34:39.702363  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:52855
+04/24/2026-01:34:39.703896  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:52855
+04/24/2026-01:34:39.724596  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:53280 -> 192.168.0.1:53
+04/24/2026-01:34:39.724796  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:50516
+04/24/2026-01:34:39.724853  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:51647 -> 192.168.0.1:53
+04/24/2026-01:34:39.725034  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:53280 -> 192.168.0.1:53
+04/24/2026-01:34:39.727042  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:50516
+04/24/2026-01:34:39.728322  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:51647 -> 192.168.0.1:53
+04/24/2026-01:34:39.731125  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:53280
+04/24/2026-01:34:39.732247  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:53280
+04/24/2026-01:34:39.735238  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:51647
+04/24/2026-01:34:39.736092  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:51647
+04/24/2026-01:34:39.796910  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:53602 -> 192.168.0.1:53
+04/24/2026-01:34:39.797567  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:54318 -> 192.168.0.1:53
+04/24/2026-01:34:39.797976  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:53602 -> 192.168.0.1:53
+04/24/2026-01:34:39.798208  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:54318 -> 192.168.0.1:53
+04/24/2026-01:34:39.805477  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:53602
+04/24/2026-01:34:39.805965  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:53602
+04/24/2026-01:34:40.024684  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:56731
+04/24/2026-01:34:40.024855  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:56731
+04/24/2026-01:34:39.818371  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:54318
+04/24/2026-01:34:40.055710  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:56886 -> 192.168.0.1:53
+04/24/2026-01:34:40.055946  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:59458 -> 192.168.0.1:53
+04/24/2026-01:34:39.819200  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:54318
+04/24/2026-01:34:40.059382  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:56886 -> 192.168.0.1:53
+04/24/2026-01:34:40.059463  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:59458 -> 192.168.0.1:53
+04/24/2026-01:34:39.797081  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:61004 -> 192.168.0.1:53
+04/24/2026-01:34:39.797344  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:51828 -> 192.168.0.1:53
+04/24/2026-01:34:39.798055  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:61004 -> 192.168.0.1:53
+04/24/2026-01:34:39.798129  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:51828 -> 192.168.0.1:53
+04/24/2026-01:34:39.810197  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:61004
+04/24/2026-01:34:39.810353  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:61004
+04/24/2026-01:34:39.812523  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:51828
+04/24/2026-01:34:39.812843  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:56239 -> 192.168.0.1:53
+04/24/2026-01:34:39.813260  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:51828
+04/24/2026-01:34:39.814283  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:56239 -> 192.168.0.1:53
+04/24/2026-01:34:39.835526  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:56239
+04/24/2026-01:34:40.068436  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:56886
+04/24/2026-01:34:39.835892  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:56239
+04/24/2026-01:34:40.069488  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:59458
+04/24/2026-01:34:40.070015  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:56886
+04/24/2026-01:34:40.070288  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:59458
+04/24/2026-01:34:43.389408  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:55822 -> 192.168.0.1:53
+04/24/2026-01:34:43.390301  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:55822 -> 192.168.0.1:53
+04/24/2026-01:34:43.398547  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:55822
+04/24/2026-01:34:43.398991  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:55822
+04/24/2026-01:34:43.132274  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:54072 -> 192.168.0.1:53
+04/24/2026-01:34:43.134512  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:54072 -> 192.168.0.1:53
+04/24/2026-01:34:43.140836  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:54072
+04/24/2026-01:34:43.141224  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:54072
+04/24/2026-01:34:43.389255  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:59249 -> 192.168.0.1:53
+04/24/2026-01:34:43.390301  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:59249 -> 192.168.0.1:53
+04/24/2026-01:34:43.397437  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:59249
+04/24/2026-01:34:43.398767  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:59249
+04/24/2026-01:34:40.557047  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:60913 -> 192.168.0.1:53
+04/24/2026-01:34:40.557173  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:62277 -> 192.168.0.1:53
+04/24/2026-01:34:40.558067  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:60913 -> 192.168.0.1:53
+04/24/2026-01:34:40.558098  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:62277 -> 192.168.0.1:53
+04/24/2026-01:34:40.565861  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:60913
+04/24/2026-01:34:40.566861  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:62277
+04/24/2026-01:34:40.566861  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:60913
+04/24/2026-01:34:40.567926  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:62277
+04/24/2026-01:34:40.618990  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:65425 -> 192.168.0.1:53
+04/24/2026-01:34:40.619923  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:65425 -> 192.168.0.1:53
+04/24/2026-01:34:40.629450  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:65425
+04/24/2026-01:34:40.630354  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:65425
+04/24/2026-01:34:39.660592  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:52924 -> 192.168.0.1:53
+04/24/2026-01:34:39.662487  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:52924 -> 192.168.0.1:53
+04/24/2026-01:34:39.670341  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:52924
+04/24/2026-01:34:39.673138  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:52924
+04/24/2026-01:34:39.695618  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:52937 -> 192.168.0.1:53
+04/24/2026-01:34:39.695945  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:52937 -> 192.168.0.1:53
+04/24/2026-01:34:39.697800  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:55225 -> 192.168.0.1:53
+04/24/2026-01:34:39.699263  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:55225 -> 192.168.0.1:53
+04/24/2026-01:34:39.707245  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:52937
+04/24/2026-01:34:39.710840  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:52937
+04/24/2026-01:34:39.713520  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:55225
+04/24/2026-01:34:39.713887  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:55225
+04/24/2026-01:34:39.812675  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:49379 -> 192.168.0.1:53
+04/24/2026-01:34:39.813357  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:49379 -> 192.168.0.1:53
+04/24/2026-01:34:39.835973  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:49379
+04/24/2026-01:34:39.838171  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:49379
+04/24/2026-01:34:43.132481  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:55364 -> 192.168.0.1:53
+04/24/2026-01:34:43.134635  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:55364 -> 192.168.0.1:53
+04/24/2026-01:34:43.146335  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:55364
+04/24/2026-01:34:43.147012  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:55364
+04/24/2026-01:34:40.619200  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:61731 -> 192.168.0.1:53
+04/24/2026-01:34:40.620095  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:61731 -> 192.168.0.1:53
+04/24/2026-01:34:40.632497  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:61731
+04/24/2026-01:34:40.633361  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:61731
+04/24/2026-01:34:43.137984  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:62755 -> 192.168.0.1:53
+04/24/2026-01:34:43.138687  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:62755 -> 192.168.0.1:53
+04/24/2026-01:34:43.147155  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:62755
+04/24/2026-01:34:43.148549  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:62755
+04/24/2026-01:34:44.860115  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:61806 -> 192.168.0.1:53
+04/24/2026-01:34:44.862789  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:61806
+04/24/2026-01:34:45.254004  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:62593 -> 192.168.0.1:53
+04/24/2026-01:34:45.255131  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:62593
+04/24/2026-01:34:44.859964  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:54176 -> 192.168.0.1:53
+04/24/2026-01:34:44.860385  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:54176 -> 192.168.0.1:53
+04/24/2026-01:34:45.019355  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:54176
+04/24/2026-01:34:45.021044  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 192.168.0.1:53 -> 10.0.2.15:54176
+04/24/2026-01:34:45.276298  [**] [1:1000002:1] THESIS: HTTP traffic detected [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.0.2.5:80 -> 10.0.2.15:50202
+04/24/2026-01:34:45.288184  [**] [1:1000002:1] THESIS: HTTP traffic detected [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.0.2.5:80 -> 10.0.2.15:50202
+04/24/2026-01:34:45.331203  [**] [1:1000002:1] THESIS: HTTP traffic detected [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.0.2.15:50202 -> 10.0.2.5:80
+04/24/2026-01:34:45.804294  [**] [1:1000002:1] THESIS: HTTP traffic detected [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.0.2.15:50202 -> 10.0.2.5:80
+04/24/2026-01:34:45.804651  [**] [1:1000002:1] THESIS: HTTP traffic detected [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.0.2.5:80 -> 10.0.2.15:50202
+04/24/2026-01:34:45.858516  [**] [1:1000002:1] THESIS: HTTP traffic detected [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.0.2.15:50202 -> 10.0.2.5:80
+04/24/2026-01:34:52.176813  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:64863 -> 192.168.0.1:53
+04/24/2026-01:34:50.807943  [**] [1:1000002:1] THESIS: HTTP traffic detected [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.0.2.5:80 -> 10.0.2.15:50202
+04/24/2026-01:34:50.808106  [**] [1:1000002:1] THESIS: HTTP traffic detected [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.0.2.15:50202 -> 10.0.2.5:80
+04/24/2026-01:34:52.176655  [**] [1:1000011:3] THESIS: DNS answer observed (possible spoofing) [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 10.0.2.15:57364 -> 192.168.0.1:53
+04/24/2026-01:34:26.238809  [**] [1:1000002:1] THESIS: HTTP traffic detected [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.0.2.15:50202 -> 10.0.2.5:80
+04/24/2026-01:34:26.238809  [**] [1:1000002:1] THESIS: HTTP traffic detected [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.0.2.5:80 -> 10.0.2.15:50202
+THESIS PIPELINE TEST Sat Apr 25 18:03:35 UTC 2026
+THESIS PIPELINE TEST Sat Apr 25 18:25:59 UTC 2026
+THESIS PIPELINE SUCCESS Sat Apr 25 20:35:43 UTC 2026

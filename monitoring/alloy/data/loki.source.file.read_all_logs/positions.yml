@@ -1,0 +1,40 @@
+positions:
+  ? path: /var/log/suricata/eve.json
+    labels: '{job="suricata", severity="high", source="ids"}'
+  : "257921728"
+  ? path: /var/lib/docker/containers/5073357d7aa3ed1a97f297c44cc770c90e2aadc5db0d5bbd2be99605c0fea61e/5073357d7aa3ed1a97f297c44cc770c90e2aadc5db0d5bbd2be99605c0fea61e-json.log
+    labels: '{job="docker"}'
+  : "626510148"
+  ? path: /var/lib/docker/containers/1c8934351593cb7bc85c5b480c1ff6da42e9af90eae1857f3a0affccb7f93380/1c8934351593cb7bc85c5b480c1ff6da42e9af90eae1857f3a0affccb7f93380-json.log
+    labels: '{job="docker"}'
+  : "8801498"
+  ? path: /var/lib/docker/containers/5c9c22ed53bcb6bc65371287d5fe17c09445df543cf0e7bbbd64dd045b5dfed4/5c9c22ed53bcb6bc65371287d5fe17c09445df543cf0e7bbbd64dd045b5dfed4-json.log
+    labels: '{job="docker"}'
+  : "58071"
+  ? path: /var/lib/docker/containers/86ff1037dc0378d86eac098532d7e8a8b193efc8bbbd2b5614ac32d00a6e16e5/86ff1037dc0378d86eac098532d7e8a8b193efc8bbbd2b5614ac32d00a6e16e5-json.log
+    labels: '{job="docker"}'
+  : "0"
+  ? path: /var/lib/docker/containers/2738a871bcd62a4242d1673a3f4dc9ac3db891b38842cb5ce883cff4e94883f6/2738a871bcd62a4242d1673a3f4dc9ac3db891b38842cb5ce883cff4e94883f6-json.log
+    labels: '{job="docker"}'
+  : "789531"
+  ? path: /var/log/suricata/fast.log
+    labels: '{job="suricata", severity="high", source="ids"}'
+  : "33207"
+  ? path: /var/lib/docker/containers/9eaed939e6cf62f427f961d059f098696160bd6b7ca13e3699182f4c0b447aa1/9eaed939e6cf62f427f961d059f098696160bd6b7ca13e3699182f4c0b447aa1-json.log
+    labels: '{job="docker"}'
+  : "177602"
+  ? path: /var/lib/docker/containers/12144dd00d614c2d696d051e471d426c42aaff8a9b808b8a449c8dd68420aa06/12144dd00d614c2d696d051e471d426c42aaff8a9b808b8a449c8dd68420aa06-json.log
+    labels: '{job="docker"}'
+  : "76450"
+  ? path: /var/lib/docker/containers/52afe8cc3e10369ed3bb2df7e680b84da156972b81aaaf46bc3083b1e47b6594/52afe8cc3e10369ed3bb2df7e680b84da156972b81aaaf46bc3083b1e47b6594-json.log
+    labels: '{job="docker"}'
+  : "1613"
+  ? path: /var/lib/docker/containers/10430a6980ffb2133c87070ff62bf2d085f16103c34059677b3e85a77e6db480/10430a6980ffb2133c87070ff62bf2d085f16103c34059677b3e85a77e6db480-json.log
+    labels: '{job="docker"}'
+  : "5531047"
+  ? path: /var/lib/docker/containers/3da36e3b1891e27e27f4f88449124e26faa62c64175c46b717dccec3f172d31e/3da36e3b1891e27e27f4f88449124e26faa62c64175c46b717dccec3f172d31e-json.log
+    labels: '{job="docker"}'
+  : "8096625"
+  ? path: /var/lib/docker/containers/4f2bb4e60f3c5218ac4d3c083d4d4ddca13e43230933d2ddb0c4ac8dbaf181dc/4f2bb4e60f3c5218ac4d3c083d4d4ddca13e43230933d2ddb0c4ac8dbaf181dc-json.log
+    labels: '{job="docker"}'
+  : "4684781"

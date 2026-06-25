@@ -1,0 +1,20 @@
+services:
+  zeek:
+    container_name: zeek
+    image: zeek/zeek:latest
+    restart: "no"
+
+    network_mode: host
+
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+
+    volumes:
+      - ./logs:/usr/local/zeek/logs
+      - ./pcaps:/pcaps
+      - ./scripts:/scripts
+
+    working_dir: /usr/local/zeek/logs
+
+    command: zeek -r /pcaps/arp_cap.pcap /scripts/local.zeek

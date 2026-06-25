@@ -1,0 +1,82 @@
+positions:
+  ? path: /var/log/zeek/dns.log
+    labels: '{job="zeek"}'
+  : "56283"
+  ? path: /var/log/zeek/ldap.log
+    labels: '{job="zeek"}'
+  : "2561"
+  ? path: /var/log/zeek/quic.log
+    labels: '{job="zeek"}'
+  : "1451"
+  ? path: /var/log/zeek/kerberos.log
+    labels: '{job="zeek"}'
+  : "3554"
+  ? path: /var/log/zeek/conn.log
+    labels: '{job="zeek"}'
+  : "56353"
+  ? path: /var/log/zeek/ldap_search.log
+    labels: '{job="zeek"}'
+  : "3917"
+  ? path: /var/log/zeek/reporter.log
+    labels: '{job="zeek"}'
+  : "2666"
+  ? path: /var/log/zeek/dce_rpc.log
+    labels: '{job="zeek"}'
+  : "8949"
+  ? path: /var/log/zeek/arp_detec.log
+    labels: '{job="zeek"}'
+  : "2031"
+  ? path: /var/log/zeek/x509.log
+    labels: '{job="zeek"}'
+  : "7236"
+  ? path: /var/log/zeek/notice.log
+    labels: '{job="zeek"}'
+  : "2759"
+  ? path: /var/log/zeek/ssl.log
+    labels: '{job="zeek"}'
+  : "21458"
+  ? path: /var/log/zeek/ocsp.log
+    labels: '{job="zeek"}'
+  : "3650"
+  ? path: /var/log/zeek/loaded_scripts.log
+    labels: '{job="zeek"}'
+  : "37587"
+  ? path: /var/log/zeek/telemetry.log
+    labels: '{job="zeek"}'
+  : "1286679"
+  ? path: /var/log/zeek/known_hosts.log
+    labels: '{job="zeek"}'
+  : "261"
+  ? path: /var/log/zeek/http.log
+    labels: '{job="zeek"}'
+  : "18053"
+  ? path: /var/log/zeek/known_services.log
+    labels: '{job="zeek"}'
+  : "964"
+  ? path: /var/log/zeek/files.log
+    labels: '{job="zeek"}'
+  : "26924"
+  ? path: /var/log/zeek/capture_loss.log
+    labels: '{job="zeek"}'
+  : "414"
+  ? path: /var/log/zeek/dhcp.log
+    labels: '{job="zeek"}'
+  : "638"
+  ? path: /var/log/zeek/packet_filter.log
+    labels: '{job="zeek"}'
+  : "278"
+  ? path: /var/log/zeek/software.log
+    labels: '{job="zeek"}'
+  : "1064"
+  ? path: /var/log/zeek/stats.log
+    labels: '{job="zeek"}'
+  : "1390"
+  ? path: /var/log/zeek/weird.log
+    labels: '{job="zeek"}'
+  : "700"
+  ? path: /var/log/zeek/smb_mapping.log
+    labels: '{job="zeek"}'
+  : "998"
+  ? path: /var/log/zeek/smb_files.log
+    labels: '{job="zeek"}'
+  : "592"

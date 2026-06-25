@@ -1,0 +1,4 @@
+positions:
+  ? path: /var/log/suricata/fast.log
+    labels: '{host="detection_server", job="suricata"}'
+  : "33207"

@@ -1,0 +1,15 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	software
+#open	2026-04-14-22-07-48
+#fields	ts	host	host_p	software_type	name	version.major	version.minor	version.minor2	version.minor3	version.addl	unparsed_version
+#types	time	addr	port	enum	string	count	count	count	count	string	string
+1749828840.479901	10.6.13.133	-	HTTP::BROWSER	Microsoft NCSI	-	-	-	-	-	Microsoft NCSI
+1749828854.619210	10.6.13.133	-	HTTP::BROWSER	Microsoft-CryptoAPI	10	0	-	-	-	Microsoft-CryptoAPI/10.0
+1749828921.938640	10.6.13.133	-	HTTP::BROWSER	WSDAPI	-	-	-	-	-	WSDAPI
+1749828921.941958	10.6.13.129	5357	HTTP::SERVER	Microsoft-HTTPAPI	2	0	-	-	-	Microsoft-HTTPAPI/2.0
+1749828948.818186	10.6.13.133	-	HTTP::BROWSER	<unknown browser>	-	-	-	-	-	Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202
+1749829571.970638	10.6.13.133	-	HTTP::BROWSER	MSIE	11	0	-	-	-	Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)
+#close	2026-04-14-22-07-49

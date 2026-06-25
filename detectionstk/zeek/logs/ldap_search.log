@@ -1,0 +1,28 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	ldap_search
+#open	2026-04-14-22-07-48
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	message_id	scope	deref_aliases	base_object	result_count	result	diagnostic_message	filter	attributes
+#types	time	string	addr	port	addr	port	int	string	string	string	count	string	string	string	vector[string]
+1749828835.735904	Ct2rPF2lqxc6SG1EH5	10.6.13.133	53497	10.6.13.3	389	82	base	never	-	1	success	-	(&(&(&(&(DnsDomain=massfriction.com.)(Host=DESKTOP-5AVE44C))(DomainGuid=38cae56e-b7a3-4bd1-ae48-23588f03e96d))(NtVer=0x20000016))(DnsHostName=DESKTOP-5AVE44C.massfriction.com))	-
+1749828835.735906	Ct2rPF2lqxc6SG1EH5	10.6.13.133	53497	10.6.13.3	389	83	base	never	-	1	success	-	(&(&(&(&(DnsDomain=massfriction.com.)(Host=DESKTOP-5AVE44C))(DomainGuid=38cae56e-b7a3-4bd1-ae48-23588f03e96d))(NtVer=0x20000016))(DnsHostName=DESKTOP-5AVE44C.massfriction.com))	-
+1749828835.844098	Cv8hzp3eR8Y647lcjj	10.6.13.133	52427	10.6.13.3	389	9	base	never	-	1	success	-	(objectclass=*)	-
+1749828839.994822	CURzyc1FiMrCWr0NBj	10.6.13.133	65197	10.6.13.3	389	84	base	never	-	1	success	-	(&(&(&(&(DnsDomain=massfriction.com.)(Host=DESKTOP-5AVE44C))(DomainGuid=38cae56e-b7a3-4bd1-ae48-23588f03e96d))(NtVer=0x20000016))(DnsHostName=DESKTOP-5AVE44C.massfriction.com))	-
+1749828849.923154	CK21Uw4fErQridc0Gj	10.6.13.133	61885	10.6.13.3	389	85	base	never	-	1	success	-	(&(&(&(&(DnsDomain=massfriction.com.)(Host=DESKTOP-5AVE44C))(DomainGuid=38cae56e-b7a3-4bd1-ae48-23588f03e96d))(NtVer=0x20000016))(DnsHostName=DESKTOP-5AVE44C.massfriction.com))	-
+1749828850.168719	CAEnVM3TnEf1z10gE3	10.6.13.133	52443	10.6.13.3	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1749828864.521627	CykpRM3jA4jjAr6SPc	10.6.13.133	52456	10.6.13.3	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1749828911.157176	CTd46r3zD7M4tUgkC3	10.6.13.133	50808	10.6.13.3	389	86	base	never	-	1	success	-	(&(&(&(&(DnsDomain=massfriction.com.)(Host=DESKTOP-5AVE44C))(DomainGuid=38cae56e-b7a3-4bd1-ae48-23588f03e96d))(NtVer=0x00000016))(DnsHostName=DESKTOP-5AVE44C.massfriction.com))	-
+1749828911.330186	Cb8P9d2KUEeX28k9u1	10.6.13.133	52506	10.6.13.3	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1749829153.194603	C4QDBL2BlGUB0VvASc	10.6.13.133	52537	10.6.13.3	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1749829290.730482	CaO4PC3TPedWE51VT1	10.6.13.133	54136	10.6.13.3	389	87	base	never	-	1	success	-	(&(&(&(&(&(DnsDomain=massfriction.com.)(Host=DESKTOP-5AVE44C))(DomainSid=S-1-5-21-408266568-3947399335-3725113099))(DomainGuid=38cae56e-b7a3-4bd1-ae48-23588f03e96d))(NtVer=0x20000016))(DnsHostName=DESKTOP-5AVE44C.massfriction.com))	-
+1749829290.843654	CniEOp1IQev0rrXgR4	10.6.13.133	52545	10.6.13.3	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1749829291.517059	ChADXA2d2uw4TOqyZg	10.6.13.133	52549	10.6.13.3	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1749829531.939293	CTcF647HYNFzp1i7h	10.6.13.133	52566	10.6.13.3	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1749829709.131069	CgEd1L3byku8P0Hrui	10.6.13.133	52579	10.6.13.3	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1749830639.710218	CJr3xa3FvopQzg0r73	10.6.13.133	52621	10.6.13.3	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1749830847.148332	Cmx8It3Q89kXIwVHd5	10.6.13.133	62117	10.6.13.3	389	88	base	never	-	1	success	-	(&(&(&(&(DnsDomain=massfriction.com.)(Host=DESKTOP-5AVE44C))(DomainGuid=38cae56e-b7a3-4bd1-ae48-23588f03e96d))(NtVer=0x00000016))(DnsHostName=DESKTOP-5AVE44C.massfriction.com))	-
+1749830847.305491	CaaLZh32AtkccUIjo5	10.6.13.133	62119	10.6.13.3	389	89	base	never	-	1	success	-	(&(&(&(&(DnsDomain=massfriction.com.)(Host=DESKTOP-5AVE44C))(DomainGuid=38cae56e-b7a3-4bd1-ae48-23588f03e96d))(NtVer=0x20000016))(DnsHostName=DESKTOP-5AVE44C.massfriction.com))	-
+1749830847.423474	C9X6un3jjFRkbElQP1	10.6.13.133	52636	10.6.13.3	389	1	base	never	-	1	success	-	(objectclass=*)	-
+#close	2026-04-14-22-07-49

@@ -1,0 +1,37 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	reporter
+#open	2026-04-18-17-37-47
+#fields	ts	level	message	location
+#types	time	enum	string	string
+1776458571.272263	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458571.738573	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458573.272460	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458573.739575	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458575.272945	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458575.740675	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458577.273114	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458577.741257	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458579.273400	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458579.744297	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458581.273746	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458581.745598	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458583.274183	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458583.748230	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458585.274648	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458585.748539	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458587.275366	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458587.749131	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458589.275567	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458589.750088	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458591.275697	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458591.750645	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458593.276153	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458593.750805	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458595.276349	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458595.751351	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458597.276635	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+1776458597.752044	Reporter::ERROR	no such index (seen[SPA])	/scripts/local.zeek, line 8
+#close	2026-04-18-17-37-47

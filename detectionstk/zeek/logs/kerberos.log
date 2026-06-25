@@ -1,0 +1,32 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	kerberos
+#open	2026-04-14-22-07-48
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	request_type	client	service	success	error_msg	from	till	cipher	forwardable	renewable	client_cert_subject	client_cert_fuid	server_cert_subject	server_cert_fuid
+#types	time	string	addr	port	addr	port	string	string	string	bool	string	time	time	string	bool	bool	string	string	string	string
+1749828835.847020	CnIXBg3GbxhTmWoCUc	10.6.13.133	52428	10.6.13.3	88	TGS	DESKTOP-5AVE44C$/MASSFRICTION.COM	ldap/win-dql4wfwjxq4.massfriction.com/massfriction.com	T	-	-	4.124486885e+09	aes256-cts-hmac-sha1-96	T	T	-	-	-	-
+1749828849.909554	ColbCO2knpjwwSvjxk	10.6.13.133	52433	10.6.13.3	88	AS	rgaines/MASSFRICTION	krbtgt/MASSFRICTION	F	KDC_ERR_PREAUTH_REQUIRED	-	4.124486885e+09	-	T	T	-	-	-	-
+1749828849.919195	CBFVQI2J9MkeRpZ21i	10.6.13.133	52434	10.6.13.3	88	AS	rgaines/MASSFRICTION	krbtgt/MASSFRICTION.COM	T	-	-	4.124486885e+09	aes256-cts-hmac-sha1-96	T	T	-	-	-	-
+1749828849.922093	C8ZcbR4PB6jUzmWIb	10.6.13.133	52435	10.6.13.3	88	TGS	rgaines/MASSFRICTION.COM	host/desktop-5ave44c.massfriction.com	T	-	-	4.124486885e+09	aes256-cts-hmac-sha1-96	T	T	-	-	-	-
+1749828850.126489	C8LqAVPPvxli4TuKf	10.6.13.133	52439	10.6.13.3	88	TGS	rgaines/MASSFRICTION.COM	cifs/WIN-DQL4WFWJXQ4.massfriction.com	T	-	-	4.124486885e+09	aes256-cts-hmac-sha1-96	T	T	-	-	-	-
+1749828850.127696	Cjopm04GysoX108Bv5	10.6.13.133	52440	10.6.13.3	88	TGS	rgaines/MASSFRICTION.COM	LDAP/WIN-DQL4WFWJXQ4.massfriction.com/massfriction.com	T	-	-	4.124486885e+09	aes256-cts-hmac-sha1-96	T	T	-	-	-	-
+1749828850.130953	CXW2ok3S4RpxX3IMC	10.6.13.133	52441	10.6.13.3	88	TGS	rgaines/MASSFRICTION.COM	krbtgt/MASSFRICTION.COM	T	-	-	4.124486885e+09	aes256-cts-hmac-sha1-96	T	T	-	-	-	-
+1749828850.411423	CL8G2l3Kt9w5c5zp33	10.6.13.133	52446	10.6.13.3	88	TGS	rgaines/MASSFRICTION.COM	cifs/win-dql4wfwjxq4	T	-	-	4.124486885e+09	aes256-cts-hmac-sha1-96	T	T	-	-	-	-
+1749828850.133023	C7HOMH3DZS6ERl5PH8	10.6.13.133	52436	10.6.13.3	445	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+1749828864.511127	CJNwzLCOOXXwkM7Gj	10.6.13.133	52455	10.6.13.3	49669	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+1749828864.731599	CmzxfznVDn0rNSKl2	10.6.13.133	52459	10.6.13.3	445	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+1749828850.131526	CxYlIv27dtRphsqIGi	10.6.13.133	52438	10.6.13.3	49669	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+1749828911.308894	C71Tdx1JWE5sCAsXoi	10.6.13.133	52505	10.6.13.3	49669	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+1749829153.197415	C35eZZ14UNp2qQVDsl	10.6.13.133	52538	10.6.13.3	88	TGS	rgaines/MASSFRICTION.COM	ldap/win-dql4wfwjxq4.massfriction.com	T	-	-	4.124486885e+09	aes256-cts-hmac-sha1-96	T	T	-	-	-	-
+1749829151.252667	C6vEp96MeA2oNihwc	10.6.13.133	52536	10.6.13.3	49669	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+1749829291.502819	C1uKbG1gLpiLyNrLJ2	10.6.13.133	52548	10.6.13.3	49669	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+1749829531.925971	CaS1pDyUBtEBRfVPd	10.6.13.133	52565	10.6.13.3	49669	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+1749829709.116843	CbjPPr2KQI7j8Gnfa7	10.6.13.133	52578	10.6.13.3	49669	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+1749829764.759371	CAn1D12kPkNyW8Vpsi	10.6.13.133	52583	10.6.13.3	445	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+1749830639.694171	CYQZ9n2haNOEc2WqF	10.6.13.133	52620	10.6.13.3	49669	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+1749830664.791837	CFyq6t3UnYyYZPf2Bk	10.6.13.133	52627	10.6.13.3	445	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+1749830847.290011	Ci3Ndx18vl74UomAej	10.6.13.133	52635	10.6.13.3	49669	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+1749828850.414652	CgYJkN1yWQKD45nYVc	10.6.13.133	52445	10.6.13.3	445	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+#close	2026-04-14-22-07-49

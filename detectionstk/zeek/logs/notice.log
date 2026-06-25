@@ -1,0 +1,15 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	notice
+#open	2026-04-14-22-07-48
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	fuid	file_mime_type	file_desc	proto	note	msg	sub	src	dst	p	n	peer_descr	actions	email_dest	suppress_for	remote_location.country_code	remote_location.region	remote_location.city	remote_location.latitude	remote_location.longitude
+#types	time	string	addr	port	addr	port	string	string	string	enum	enum	string	string	addr	addr	port	count	string	set[enum]	set[string]	interval	string	string	string	double	double
+1749828840.413803	CBW1oU3q2YBI7GG1sb	10.6.13.133	52430	52.156.123.84	443	FrIfic30Huvol305xd	-	-	tcp	SSL::Invalid_Server_Cert	SSL certificate validation failed with (unable to get local issuer certificate)	CN=*.prod.do.dsp.mp.microsoft.com,OU=DSP,O=Microsoft,L=Redmond,ST=WA,C=US	10.6.13.133	52.156.123.84	443	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
+1749829292.812069	CJf4Xj039pCrYqQS8	10.6.13.133	52553	52.140.118.28	443	FOUXB43k9V9RTczf13	-	-	tcp	SSL::Invalid_Server_Cert	SSL certificate validation failed with (unable to get local issuer certificate)	CN=settings-win.data.microsoft.com,OU=WSE,O=Microsoft,L=Redmond,ST=WA,C=US	10.6.13.133	52.140.118.28	443	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
+1749829433.984236	Cz66AXfMlC4IsFtfl	10.6.13.133	52558	13.74.187.43	443	FYSbdd2HUIujTfJqFh	-	-	tcp	SSL::Invalid_Server_Cert	SSL certificate validation failed with (unable to get local issuer certificate)	CN=*.prod.do.dsp.mp.microsoft.com,OU=DSP,O=Microsoft,L=Redmond,ST=WA,C=US	10.6.13.133	13.74.187.43	443	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
+1749829551.103529	CF2UjD3FK1dYdmCRT9	10.6.13.133	52569	20.50.80.213	443	FJTxmg2gDTuZ8rfgN2	-	-	tcp	SSL::Invalid_Server_Cert	SSL certificate validation failed with (unable to get local issuer certificate)	CN=*.events.data.microsoft.com,OU=WSE,O=Microsoft,L=Redmond,ST=WA,C=US	10.6.13.133	20.50.80.213	443	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
+1749830017.821340	Cb42eU2JvlGIrQoTQ1	10.6.13.133	52594	40.69.76.172	443	FkZqJ6kPYkzYtEM0k	-	-	tcp	SSL::Invalid_Server_Cert	SSL certificate validation failed with (unable to get local issuer certificate)	CN=*.prod.do.dsp.mp.microsoft.com,OU=DSP,O=Microsoft,L=Redmond,ST=WA,C=US	10.6.13.133	40.69.76.172	443	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
+1749830641.618407	CVWBgr4mz8k0wCSQ33	10.6.13.133	52624	52.167.249.196	443	F6K6VnWNI95jTuQt7	-	-	tcp	SSL::Invalid_Server_Cert	SSL certificate validation failed with (unable to get local issuer certificate)	CN=settings-win.data.microsoft.com,OU=WSE,O=Microsoft,L=Redmond,ST=WA,C=US	10.6.13.133	52.167.249.196	443	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
+#close	2026-04-14-22-07-49
