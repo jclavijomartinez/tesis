@@ -1,34 +1,41 @@
-timestamp,agent.name,rule.description,rule.level,rule.id
-"Jun 16, 2026 @ 22:36:18.497",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:36:08.151",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:35:56.710",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:35:45.850",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:35:34.944",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:35:24.188",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:35:13.081",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:35:02.201",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:34:51.368",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:34:40.443",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:34:29.543",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:34:18.699",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:34:07.847",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:33:57.506",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:33:46.197",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:33:35.420",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:33:24.581",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:33:13.570",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:33:02.765",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:32:51.967",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:32:41.094",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:32:30.623",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:32:19.480",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:32:08.381",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:31:57.511",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:31:46.693",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:31:35.838",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:31:24.973",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:31:14.079",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:31:03.851",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:22:02.268",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:21:51.437",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
-"Jun 16, 2026 @ 22:21:38.233",DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032
+timestamp,agent.name,rule.description,rule.level,rule.id;;;;;;;;;;Ejecución;MTTD (s);Inicio (T0);Detección Wazuh (Td);0;0,4;1,2;1,6;2;;
+Jun 16, 2026 @ 22:36:18.497,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_33;1,0000;22:36:18.497;22:36:19.497;0;0;1;0;0;;1
+Jun 16, 2026 @ 22:36:08.151,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_16;1,0110;22:33:13.570;22:33:14.581;0;0;1;0;0;;
+Jun 16, 2026 @ 22:35:56.710,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_10;1,0990;22:32:08.381;22:32:09.480;0;0;1;0;0;;
+Jun 16, 2026 @ 22:35:45.850,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_27;1,1070;22:35:13.081;22:35:14.188;0;0;1;0;0;;
+Jun 16, 2026 @ 22:35:34.944,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_11;1,1430;22:32:19.480;22:32:20.623;0;0;1;0;0;;
+Jun 16, 2026 @ 22:35:24.188,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_19;1,3090;22:33:46.197;22:33:47.506;0;0;0;1;0;;
+Jun 16, 2026 @ 22:35:13.081,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_20;1,3410;22:33:57.506;22:33:58.847;0;0;0;1;0;;
+Jun 16, 2026 @ 22:35:02.201,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_32;1,3460;22:36:08.151;22:36:09.497;0;0;0;1;0;;
+Jun 16, 2026 @ 22:34:51.368,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_28;1,7560;22:35:24.188;22:35:25.944;0;0;0;0;1;;
+Jun 16, 2026 @ 22:34:40.443,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_01;0,1790;22:21:38.233;22:21:38.412;1;0;0;0;0;;
+Jun 16, 2026 @ 22:34:29.543,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_04;0,2280;22:31:03.851;22:31:04.079;1;0;0;0;0;;
+Jun 16, 2026 @ 22:34:18.699,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_31;0,4410;22:35:56.710;22:35:57.151;0;1;0;0;0;;
+Jun 16, 2026 @ 22:34:07.847,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_12;0,4710;22:32:30.623;22:32:31.094;0;1;0;0;0;;
+Jun 16, 2026 @ 22:33:57.506,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_03;0,4800;22:22:01.788;22:22:02.268;0;1;0;0;0;;
+Jun 16, 2026 @ 22:33:46.197,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_02;0,5450;22:21:50.892;22:21:51.437;0;1;0;0;0;;
+Jun 16, 2026 @ 22:33:35.420,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_18;0,7770;22:33:35.420;22:33:36.197;0;1;0;0;0;;
+Jun 16, 2026 @ 22:33:24.581,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_14;0,7980;22:32:51.967;22:32:52.765;0;1;0;0;0;;
+Jun 16, 2026 @ 22:33:13.570,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_15;0,8050;22:33:02.765;22:33:03.570;0;0;1;0;0;;
+Jun 16, 2026 @ 22:33:02.765,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_08;0,8180;22:31:46.693;22:31:47.511;0;0;1;0;0;;
+Jun 16, 2026 @ 22:32:51.967,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_25;0,8330;22:34:51.368;22:34:52.201;0;0;1;0;0;;
+Jun 16, 2026 @ 22:32:41.094,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_17;0,8390;22:33:24.581;22:33:25.420;0;0;1;0;0;;
+Jun 16, 2026 @ 22:32:30.623,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_22;0,8440;22:34:18.699;22:34:19.543;0;0;1;0;0;;
+Jun 16, 2026 @ 22:32:19.480,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_21;0,8520;22:34:07.847;22:34:08.699;0;0;1;0;0;;
+Jun 16, 2026 @ 22:32:08.381,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_07;0,8550;22:31:35.838;22:31:36.693;0;0;1;0;0;;
+Jun 16, 2026 @ 22:31:57.511,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_30;0,8600;22:35:45.850;22:35:46.710;0;0;1;0;0;;
+Jun 16, 2026 @ 22:31:46.693,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_06;0,8650;22:31:24.973;22:31:25.838;0;0;1;0;0;;
+Jun 16, 2026 @ 22:31:35.838,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_09;0,8700;22:31:57.511;22:31:58.381;0;0;1;0;0;;
+Jun 16, 2026 @ 22:31:24.973,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_13;0,8730;22:32:41.094;22:32:41.967;0;0;1;0;0;;
+Jun 16, 2026 @ 22:31:14.079,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_26;0,8800;22:35:02.201;22:35:03.081;0;0;1;0;0;;
+Jun 16, 2026 @ 22:31:03.851,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_05;0,8940;22:31:14.079;22:31:14.973;0;0;1;0;0;;
+Jun 16, 2026 @ 22:22:02.268,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_23;0,9000;22:34:29.543;22:34:30.443;0;0;1;0;0;;
+Jun 16, 2026 @ 22:21:51.437,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_29;0,9060;22:35:34.944;22:35:35.850;0;0;1;0;0;;
+Jun 16, 2026 @ 22:21:38.233,DESKTOP-KUB5HJJ,Suspicious Windows cmd shell execution,3,92032;;;;;;;;;;CONTI_SIM_24;0,9250;22:34:40.443;22:34:41.368;0;0;1;0;0;;
+;;;;;;;;;;;;;;2;6;21;3;1;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;; MTTD (segundos);0;0,4;1,2;1,6;2;;
+;;;;;;;;;;;;;Frecuencia;2;6;21;3;1;;
